@@ -6,6 +6,7 @@ public class MoveingTerrain : MonoBehaviour
 {
     public float speed;
     private GameManager gameManager;
+    public GameObject nextToActivate;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,4 +21,5 @@ public class MoveingTerrain : MonoBehaviour
             transform.position += Vector3.down * speed * Time.deltaTime;
         }
     }
+
 }

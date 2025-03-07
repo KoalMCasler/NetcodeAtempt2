@@ -4,6 +4,8 @@ using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+using UnityEngine.UI;
+using Unity.Netcode.Transports.UTP;
 
 public class UIManager : NetworkBehaviour
 {
@@ -15,6 +17,9 @@ public class UIManager : NetworkBehaviour
     public GameObject sharedHUD;
     public GameObject endScreen;
     public TextMeshProUGUI endText;
+    public Button joinButton;
+    public Button hostButton;
+    public InputField ipInput;
 
     void Awake()
     {
@@ -89,5 +94,7 @@ public class UIManager : NetworkBehaviour
         }
         endScreen.SetActive(true);
     }
+
+
 
 }
